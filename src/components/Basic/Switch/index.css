@@ -1,0 +1,14 @@
+#radio:checked ~label .left {
+    left: 66.11px;
+}
+#radio:checked ~label .right {
+    left: 5.8px;
+}
+.switchContainer .left {
+    left: 5.8px;
+
+}
+.switchContainer .right {
+    left: 66.11px;
+
+}
