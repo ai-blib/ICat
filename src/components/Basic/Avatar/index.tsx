@@ -1,15 +1,18 @@
-import { AvatarWrap } from './styles'
+import {AvatarWrap} from './styles'
 import Icon from '../../../icons/Icon'
 interface Props {
-    onClick?: () => void,
+    onClick?:()=>void,
+    text:string
 }
-export const Avatar = ({ onClick }: Props) => {
+export const Avatar = ({onClick,text}:Props) => {
     return (
-        <AvatarWrap onClick={onClick && onClick}>
-            {/*<Icon name='avatar' />*/}
+        <AvatarWrap onClick={onClick&&onClick}>
+            <Icon name='avatar' />
+            <span className='avatarText'>
+                {text}
+            </span>
 
-
-            {/* <Icon name='down' /> */}
+            <Icon name='down' />
         </AvatarWrap>
     )
 }

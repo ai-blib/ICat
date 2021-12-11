@@ -1,17 +1,23 @@
-import { Container, Wrap } from './styles';
-import { Header } from '@/components';
-import { Route, Switch, Redirect } from "react-router-dom";
-import Profile from './Profile'
-import Home from './Home'
+import {Container, Wrap} from './styles';
+import {NavBar,Header} from '@/components';
+import {Route,Switch,Redirect} from "react-router-dom";
+import Assets from './Assets';
+import Swap from './Swap';
+import Liquidity from './Liquidity';
+import Activity from './Activity';
 export default () => {
     return (
         <Wrap>
-            <Header />
+            <Header/>
+            <NavBar />
             <Container className="container">
                 <Switch>
-                    <Route exact path="/" render={() => <Home />} />
-                    <Route exact path="/profile" render={() => <Profile />} />
+                    <Route path="/assets"  render={()=> <Assets />}/>
+                    <Route path="/swap" render={()=> <Swap />} />
+                    <Route path="/liquidity" render={()=> <Liquidity />} />
+                    <Route path="/activity" render={()=> <Activity />} />
                 </Switch>
+                {/*<Route path="/swap/exchange" render={() => <SwapExchangeWrap />} />*/}
             </Container>
         </Wrap>
     )

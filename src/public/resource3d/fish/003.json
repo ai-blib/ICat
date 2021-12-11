@@ -1,0 +1,87 @@
+{"frames": {
+
+"fish_00018.png":
+{
+	"frame": {"x":194,"y":1,"w":134,"h":46},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":72,"w":134,"h":46},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00019.png":
+{
+	"frame": {"x":242,"y":1,"w":134,"h":46},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":72,"w":134,"h":46},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00020.png":
+{
+	"frame": {"x":1,"y":204,"w":134,"h":49},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":69,"w":134,"h":49},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00021.png":
+{
+	"frame": {"x":137,"y":196,"w":134,"h":53},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":65,"w":134,"h":53},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00022.png":
+{
+	"frame": {"x":137,"y":137,"w":134,"h":57},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":61,"w":134,"h":57},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00023.png":
+{
+	"frame": {"x":132,"y":1,"w":134,"h":60},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":58,"w":134,"h":60},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00024.png":
+{
+	"frame": {"x":68,"y":1,"w":134,"h":62},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":56,"w":134,"h":62},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00025.png":
+{
+	"frame": {"x":1,"y":138,"w":134,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":54,"w":134,"h":64},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00026.png":
+{
+	"frame": {"x":1,"y":1,"w":135,"h":65},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":53,"w":135,"h":65},
+	"sourceSize": {"w":150,"h":150}
+}},
+"animations": {
+	"fish": ["fish_00018.png","fish_00019.png","fish_00020.png","fish_00021.png","fish_00022.png","fish_00023.png","fish_00024.png","fish_00025.png","fish_00026.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "003.png",
+	"format": "RGBA8888",
+	"size": {"w":289,"h":254},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:01fb4bb66900f562740809dd8f8b2460:fd0f3bacab50ae95ccae74ddb243ca15:a402b6c56771a8707b43ce66d8897f86$"
+}
+}

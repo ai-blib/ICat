@@ -1,0 +1,63 @@
+{"frames": {
+
+"fish_00001.png":
+{
+	"frame": {"x":1,"y":48,"w":59,"h":7},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":48,"y":111,"w":59,"h":7},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00002.png":
+{
+	"frame": {"x":137,"y":19,"w":83,"h":12},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":37,"y":106,"w":83,"h":12},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00003.png":
+{
+	"frame": {"x":137,"y":1,"w":103,"h":16},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":102,"w":103,"h":16},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00004.png":
+{
+	"frame": {"x":133,"y":33,"w":119,"h":19},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":99,"w":119,"h":19},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00005.png":
+{
+	"frame": {"x":1,"y":25,"w":130,"h":21},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":97,"w":130,"h":21},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00006.png":
+{
+	"frame": {"x":1,"y":1,"w":134,"h":22},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":96,"w":134,"h":22},
+	"sourceSize": {"w":150,"h":150}
+}},
+"animations": {
+	"fish": ["fish_00001.png","fish_00002.png","fish_00003.png","fish_00004.png","fish_00005.png","fish_00006.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "001.png",
+	"format": "RGBA8888",
+	"size": {"w":253,"h":56},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:67594681874e37ae9530ab8cb6903d26:5ef70479ea549e7dba9a08a962b49d42:7478c2720d986fd823a3c64394511fe4$"
+}
+}

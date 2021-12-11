@@ -1,0 +1,103 @@
+{"frames": {
+
+"fish_00007.png":
+{
+	"frame": {"x":394,"y":1,"w":134,"h":23},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":95,"w":134,"h":23},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00008.png":
+{
+	"frame": {"x":368,"y":1,"w":134,"h":24},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":94,"w":134,"h":24},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00009.png":
+{
+	"frame": {"x":339,"y":1,"w":134,"h":27},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":91,"w":134,"h":27},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00010.png":
+{
+	"frame": {"x":307,"y":1,"w":134,"h":30},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":88,"w":134,"h":30},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00011.png":
+{
+	"frame": {"x":271,"y":1,"w":134,"h":34},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":84,"w":134,"h":34},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00012.png":
+{
+	"frame": {"x":232,"y":1,"w":134,"h":37},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":81,"w":134,"h":37},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00013.png":
+{
+	"frame": {"x":189,"y":1,"w":134,"h":41},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":77,"w":134,"h":41},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00014.png":
+{
+	"frame": {"x":144,"y":1,"w":134,"h":43},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":75,"w":134,"h":43},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00015.png":
+{
+	"frame": {"x":97,"y":1,"w":134,"h":45},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":73,"w":134,"h":45},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00016.png":
+{
+	"frame": {"x":1,"y":1,"w":134,"h":46},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":72,"w":134,"h":46},
+	"sourceSize": {"w":150,"h":150}
+},
+"fish_00017.png":
+{
+	"frame": {"x":49,"y":1,"w":134,"h":46},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":72,"w":134,"h":46},
+	"sourceSize": {"w":150,"h":150}
+}},
+"animations": {
+	"fish": ["fish_00007.png","fish_00008.png","fish_00009.png","fish_00010.png","fish_00011.png","fish_00012.png","fish_00013.png","fish_00014.png","fish_00015.png","fish_00016.png","fish_00017.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "002.png",
+	"format": "RGBA8888",
+	"size": {"w":418,"h":136},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:598d02311dd23dfb9931932976eb151e:40e235b933c995ea3a8e7cb9abf48d98:783e7fc5846530eaab49b9680c1dd425$"
+}
+}

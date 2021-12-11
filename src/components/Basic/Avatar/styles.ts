@@ -1,12 +1,23 @@
 import styled from "styled-components";
+
 export const AvatarWrap = styled.div`
-   position: absolute;
-   left: 660px;
-   top: 307px;
-   width: 120px;
-   height: 120px;
-   background: url(../../../public/assets/checker.png);
-   border: 4px solid #FFFFFF;
-   border-radius: 100%;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-`;
+            height: 50px;
+            padding: 0 19px;
+            background: #1E1E1E;
+            border-radius: 100px;
+             display: flex;
+            align-items: center;
+            flex-direction: row;
+            .avatarText{
+            font-family: Nunito Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            /* identical to box height */
+            color: #F6FCFD;
+            cursor: pointer;
+             margin-right: 11px;
+            }
+        
+`

@@ -10,9 +10,7 @@ interface Props {
 export const Tips = ({title, content,onClick}:Props) => {
     return (
         <TipWrap>
-            <Title>{title}<span onClick={()=>onClick&&onClick()}>
-                {/*<Icon name='close'/>*/}
-            </span></Title>
+            <Title>{title}<span onClick={()=>onClick&&onClick()}><Icon name='close'/></span></Title>
             <Content>
                 {content}
             </Content>

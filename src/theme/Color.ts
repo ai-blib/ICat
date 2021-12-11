@@ -5,12 +5,10 @@ export const defaultThem = {
     grayBackground: '#282828',
 
     //basic
-    spanColor:'#888E8F',
-    borderColor:'#000000'
+    spanColor:'#888E8F'
 }
 export const SIZE = {
     // card size
     cardWidth: 480,
     cardHeight:115,
 }
-export const LightTheme:any = {...defaultThem,...SIZE}

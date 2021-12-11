@@ -1,44 +1,65 @@
-import { HeaderStyles as styled } from './styles'
-import { Avatar,Drawer } from '@/components';
-import { useCallback, useMemo } from 'react'
+import {Sheader, Wrap, Connect, Layout} from './styles'
+import {Avatar} from '@/components';
+import {useCallback, useMemo} from 'react'
 import Logo from "./logo";
-import { useAuth } from "@/usehooks/useAuth";
-import { desensitizationPrincipal } from '@/utils/formate'
-import { Principal } from "@dfinity/agent";
-import { SearchInput } from '@/components';
+import {useAuth} from "@/usehooks/useAuth";
+import {desensitizationPrincipal} from '@/utils/formate'
+import {Principal} from "@dfinity/agent";
+import {Tooltips} from '@/components';
 import Icon from '@/icons/Icon'
 
 interface Props {
-    Id: string
+     Id:string
 };
+const Menus = ({Id}:Props) => {
+        const {principal,logOut}: {  principal: Principal,logOut:Function} = useAuth();
+    const handleLayOut = useCallback(() => {
+        logOut && logOut()
+    }, [])
+        const sc:string = useMemo(() => {
+            return desensitizationPrincipal(String(principal),8);
+        }, [String(principal)]);
+    return <Layout>
+        <ul>
+            <li>
+                {sc}
+            </li>
+            <li>
+                <span className='icon'><Icon name='copy'/></span>
+                <span>Copy ID</span>
+            </li>
+            <li onClick={handleLayOut}>
+                <span className='icon'><Icon name='disconnect'/></span>
+                <span>Disconnect</span>
+            </li>
+        </ul>
+    </Layout>
+}
 
-const ListString = ['New Drops', "Explore", "Activity"]
+
 export const Header = () => {
-    const { plugLogIn, isAuth, principal, logOut }: { plugLogIn: Function, isAuth: boolean, principal: Principal, logOut: Function } = useAuth();
+    const {plugLogIn, isAuth, principal, logOut}: { plugLogIn: Function, isAuth: boolean, principal: Principal, logOut: Function } = useAuth();
     const handleClick = () => {
         // @ts-ignore
         plugLogIn && plugLogIn()
     }
-    const sc: string = useMemo(() => {
+    const sc:string = useMemo(() => {
         return desensitizationPrincipal(String(principal));
     }, [String(principal)]);
 
     return (
-        <styled.Header>
-            <Icon name='logo' />
-            <styled.SearchWrap>
-                <SearchInput placeholder='Search by collection, items, artists, etc' />
-            </styled.SearchWrap>
-            <styled.RowWrap>
-                {ListString.map((item: string) => (
-                    <styled.RowListItem>
-                        {item}
-                    </styled.RowListItem>
-                ))}
-            </styled.RowWrap>
-            <Icon name="darkmode" />
-            <Icon name='wallet' />
-            <Drawer />
-        </styled.Header>
+        <Sheader>
+            <Logo/>
+            <div>
+            </div>
+            <Wrap>
+                {isAuth ?
+                    <Tooltips content={<Menus Id={sc}  />}>
+                        < Avatar text={sc}/>
+                    </Tooltips> :
+                    <Connect onClick={handleClick} src='../../public/assets/plug.png'/>
+                }
+            </Wrap>
+        </Sheader>
     )
 }

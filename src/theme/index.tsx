@@ -1,7 +1,12 @@
-import { ThemeProvider as StyledComponentsThemeProvider } from 'styled-components';
-import {LightTheme,SIZE} from './Color';
+import styled, {
+    createGlobalStyle,
+    css,
+    DefaultTheme,
+    ThemeProvider as StyledComponentsThemeProvider,
+} from 'styled-components'
+import {defaultThem,SIZE} from './Color';
 
 export default function ThemeProvider({ children }: { children: React.ReactNode }) {
-    return <StyledComponentsThemeProvider theme={(LightTheme)}>{children}</StyledComponentsThemeProvider>
+    return <StyledComponentsThemeProvider theme={{...defaultThem,...SIZE}}>{children}</StyledComponentsThemeProvider>
 };
 

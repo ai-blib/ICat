@@ -3,10 +3,7 @@ import styled from "styled-components";
 export const InputWrap = styled.div`
      width: 100%;
      height: 42px;
-     background: rgba(204, 204, 204, 0.6);
-     /* blur */
-     backdrop-filter: blur(40px);
-     /* Note: backdrop-filter has minimal browser support */
+     background: #282828;
      border-radius: 20px;
      display: flex;
      align-items: center;
@@ -14,7 +11,7 @@ export const InputWrap = styled.div`
      flex-direction: row;
      border: 1px solid transparent;
       &:hover{
-        border: 1px solid #FF0000;
+        border: 1px solid #3D52F4;
      }
 `
 export const InnerInput = styled.input`
@@ -34,47 +31,39 @@ export const InnerInput = styled.input`
     caret-color:#FFFFFF;
     &::-webkit-input-placeholder { 
     /* WebKit browsers */ 
-       font-family: Inter;
+    font-family: Nunito Sans;
     font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 160%;
-    /* or 19px */
-    color: rgba(105, 105, 105, 0.6);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
 /* identical to box height */
 
-    color: rgba(105, 105, 105, 0.6);
 
+color: #888E8F;
     } 
     &:-moz-placeholder { 
     /* Mozilla Firefox 4 to 18 */ 
-       font-family: Inter;
+        font-family: Nunito Sans;
     font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 160%;
-    /* or 19px */
-    color: rgba(105, 105, 105, 0.6);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
     } 
     &::-moz-placeholder { 
     /* Mozilla Firefox 19+ */ 
-     font-family: Inter;
+    font-family: Nunito Sans;
     font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 160%;
-    /* or 19px */
-    color: rgba(105, 105, 105, 0.6);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
     } 
     &:-ms-input-placeholder { 
     /* Internet Explorer 10+ */ 
-        font-family: Inter;
+        font-family: Nunito Sans;
     font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 160%;
-    /* or 19px */
-    color: rgba(105, 105, 105, 0.6);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px; 
   }
 `
 

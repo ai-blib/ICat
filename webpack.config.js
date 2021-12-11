@@ -68,6 +68,7 @@ function generateWebpackConfigForCanister(name, info) {
             },
             extensions: [".js", ".ts", ".jsx", ".tsx"],
             fallback: {
+                path:false,
                 assert: require.resolve("assert/"),
                 buffer: require.resolve("buffer/"),
                 events: require.resolve("events/"),
@@ -82,7 +83,7 @@ function generateWebpackConfigForCanister(name, info) {
         },
         devServer: {
             historyApiFallback: true,
-            port: 3003,
+            port: 3000,
             proxy: {
                 "/api": {
                     target: "http://boundary.ic0.app",
@@ -138,8 +139,8 @@ function generateWebpackConfigForCanister(name, info) {
             new CopyPlugin({
                 patterns: [
                     {
-                        from: path.join(__dirname, "src", "public", "assets"),
-                        to: path.join(__dirname, "dist"),
+                        from: path.join(__dirname, "src", "public",),
+                        to: path.join(__dirname, "dist","public"),
                     },
                 ],
             }),

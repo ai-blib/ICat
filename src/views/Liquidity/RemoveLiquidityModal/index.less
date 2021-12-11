@@ -1,0 +1,43 @@
+@mainBackground:#1E1E1E;
+@radius:12px;
+@HeaderColor:#F6FCFD;
+.removeLiquidityModal {
+  .MuiDialogContent-root {
+    overflow: hidden;
+  }
+
+  .MuiPaper-root {
+    background: @mainBackground;
+    border-radius: @radius;
+    color: white;
+    width: 480px;
+    height: 564px;
+  }
+}
+.slider-liquidity{
+  .rc-slider-step{
+    background: #2D2D2D;
+  }
+  .rc-slider-track{
+    background: linear-gradient(180deg, #3D52F4 0%, #192985 100%);
+    z-index: 1;
+  }
+  .rc-slider-handle{
+    width: 27px;
+    height: 27px;
+    background: #6C6C6C;
+    border-color: transparent;
+    margin-top: -11px;
+    z-index: 2;
+    &:hover{
+      border-color: transparent;
+    }
+    &:active{
+      border-color: transparent;
+      box-shadow: 0 0 5px #6C6C6C;
+    }
+    &:focus{
+      border-color: transparent;
+    }
+  }
+}
